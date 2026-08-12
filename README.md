@@ -1,5 +1,5 @@
-[![Node.js CI](https://github.com/Borewit/tokenizer-s3/actions/workflows/nodejs-ci.yml/badge.svg?branch=master)](https://github.com/Borewit/tokenizer-s3/actions/workflows/nodejs-ci.yml)
-[![CodeQL](https://github.com/Borewit/tokenizer-s3/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/Borewit/tokenizer-s3/actions/workflows/github-code-scanning/codeql)
+[![Node.js CI](https://github.com/Unity-Billal-mesloub/tokenizer-s3/actions/workflows/nodejs-ci.yml/badge.svg?branch=master)](https://github.com/Unity-Billal-mesloub/tokenizer-s3/actions/workflows/nodejs-ci.yml)
+[![CodeQL](https://github.com/Unity-Billal-mesloub/tokenizer-s3/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/Unity-Billal-mesloub/tokenizer-s3/actions/workflows/github-code-scanning/codeql)
 [![NPM version](https://img.shields.io/npm/v/@tokenizer/s3.svg)](https://npmjs.org/package/@tokenizer/s3)
 [![npm downloads](https://img.shields.io/npm/dm/@tokenizer/s3.svg)](https://npmcharts.com/compare/@tokenizer/s3,@tokenizer/range?start=300)
 [![Known Vulnerabilities](https://snyk.io/test/github/Borewit/tokenizer-s3/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Borewit/tokenizer-s3?targetFile=package.json)
@@ -9,7 +9,7 @@ The tokenizer-s3 module enables seamless integration with [Amazon Web Services (
 
 ## Features
 Streaming Support: Efficiently read and tokenize data from Amazon S3 objects using streaming, which is ideal for handling large files without loading them entirely into memory.
-Integration with [strtok3](https://github.com/Borewit/strtok3): Works seamlessly with the [strtok3](https://github.com/Borewit/strtok3) tokenizer to process S3 data streams, making it easy to handle various tokenization tasks.
+Integration with [tokenizer-s3](https://github.com/Unity-Billal-mesloub/strtok3): Works seamlessly with the [strtok3](https://github.com/Unity-Billal-mesloub/strtok3) tokenizer to process S3 data streams, making it easy to handle various tokenization tasks.
 Flexible Access: Provides options to configure S3 access, allowing for customized tokenization workflows based on your specific needs.
 Promise-Based API: Utilizes a promise-based API for easy integration into modern asynchronous workflows.
 
@@ -18,15 +18,6 @@ Promise-Based API: Utilizes a promise-based API for easy integration into modern
 ```shell
 npm install @tokenizer/s3
 ```
-
-## Sponsor
-If you appreciate my work and want to support the development of open-source projects like [music-metadata](https://github.com/Borewit/music-metadata), [file-type](https://github.com/sindresorhus/file-type), and [listFix()](https://github.com/Borewit/listFix), consider becoming a sponsor or making a small contribution.
-Your support helps sustain ongoing development and improvements.
-[Become a sponsor to Borewit](https://github.com/sponsors/Borewit)
-
-or
-
-<a href="https://www.buymeacoffee.com/borewit" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy me A coffee" height="41" width="174"></a>
 
 ## API Documention
 
@@ -98,13 +89,13 @@ Reads from the S3 as a stream.
 
 ## Compatibility
 
-Module: version [0.3.0](https://github.com/Borewit/tokenizer-s3/releases/tag/v0.3.0) migrated from [CommonJS](https://en.wikipedia.org/wiki/CommonJS) to [pure ECMAScript Module (ESM)](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).
+Module: version [0.3.0](https://github.com/Unity-Billal-mesloub/tokenizer-s3/releases/tag/v0.3.0) migrated from [CommonJS](https://en.wikipedia.org/wiki/CommonJS) to [pure ECMAScript Module (ESM)](https://gist.github.com/Unity-Billal-mesloub).
 The distributed JavaScript codebase is compliant with the [ECMAScript 2020 (11th Edition)](https://en.wikipedia.org/wiki/ECMAScript_version_history#11th_Edition_%E2%80%93_ECMAScript_2020) standard.
 
 This module requires a [Node.js ≥ 16](https://nodejs.org/en/about/previous-releases) engine.
 It can also be used in a browser environment when bundled with a module bundler.
 
-For TypeScript CommonJs backward compatibility, you can use [load-esm](https://github.com/Borewit/load-esm).
+For TypeScript CommonJs backward compatibility, you can use [load-esm](https://github.com/Unity-Billal-mesloub/load-esm).
 
 ## Examples
 
@@ -137,7 +128,7 @@ import { makeChunkedTokenizerFromS3 } from '@tokenizer/s3';
 })();
 ```
 
-See also [example at file-type](https://github.com/sindresorhus/file-type#filetypefromtokenizertokenizer).
+See also [example at file-type](https://github.com/Unity-Billal-mesloub/file-type#filetypefromtokenizertokenizer).
 
 ### Reading audio metadata from Amazon S3 
 
@@ -170,8 +161,3 @@ async function parseS3Object(s3, objRequest, options) {
 })();
 ```
 
-A module implementation of this example can be found in [@music-metadata/s3](https://github.com/Borewit/music-metadata-s3).
-
-## Dependency graph
-
-![dependency graph](doc/dependency.svg)
